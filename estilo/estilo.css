@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Signika:wght@500&display=swap');
+
+
+body {
+    height: 100vh;
+    width: 97vw;
+    background-color: rgb(241, 180, 3);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    background-image: linear-gradient(to right, #fdfd94 0, rgb(241, 180, 3));
+    border-radius: 20px;
+}
+
+#header-title {
+    margin: 0;
+    font-size: 50pt;
+    font-family: 'Lobster', cursive;
+    color: rgb(177, 123, 111);
+    text-shadow: 3px 3px 2px black;
+}
+
+#di-style {
+    font-family: 'Righteous', cursive;
+    color: rgb(96, 36, 25);
+}
+
+#subtitle {
+    margin: 0;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+    padding-right: 20px;
+    font-family: 'Signika', sans-serif;
+    text-shadow: 1px 1px 2px silver;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+section#cardapio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "nome create"
+    "tapiocas sopas"
+    "cuscuz macaxeira"
+    "massas tortas"
+    "bebidas .";
+}
+
+fieldset {
+    margin: 5px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #fff284;
+}
+
+#nome-cliente {
+    grid-area: nome;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: stretch;
+}
+
+#tapiocas {
+    grid-area: tapiocas;
+}
+
+#sopas {
+    grid-area: sopas;
+}
+
+#cuscuz {
+    grid-area: cuscuz;
+}
+
+#macaxeira {
+    grid-area: macaxeira;
+}
+
+#massas {
+    grid-area: massas;
+}
+
+#tortas {
+    grid-area: tortas;
+}
+
+#bebidas {
+    grid-area: bebidas;
+}
+
+#button {
+    grid-area: create;
+    text-align: right;
+    justify-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: stretch;
+}

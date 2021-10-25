@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icons8_cactus.ico">
+    <title>Informações da Comanda</title>
+    <link href="estilo/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <section id="page-head">
+            <span id="header-title">Sabor <span id="di-style">Di</span> Casa</span>
+            <p id="subtitle">Criador de Comanda</p>
+        </section>
+    </header>
+    
+    <form>     
+        <section id="cardapio">
+            <fieldset id="nome-cliente">
+                <input type="text" id="text-area" placeholder="Nome do Cliente">
+            </fieldset>
+
+            <fieldset id="tapiocas">
+                <table>
+                    <h3>Tapiocas:</h3>
+
+                    <tr>
+                        <td>Opções:</td>
+                        <td>Quantidade:</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocafrango" class="opcoes" value="Tapioca de Frango">
+                            <label for="tapiocafrango">Tapioca de Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocafrangoqtd" min="0" value="0">
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocacarne" class="opcoes" value="Tapioca de Carne">
+                            <label for="tapiocacarne">Tapioca de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocacarneqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocacalabresa" class="opcoes" value="Tapioca de Calabresa">
+                            <label for="tapiocacalabresa">Tapioca de Calabresa</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocacalabresaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocamussarela" class="opcoes" value="Tapioca de Queijo Mussarela">
+                            <label for="tapiocamussarela">Tapioca de Queijo Mussarela</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocamussarelaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocacoalho" class="opcoes" value="Tapioca de Queijo Coalho">
+                            <label for="tapiocacoalho">Tapioca de Queijo Coalho</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocacoalhoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocapresunto" class="opcoes" value="Tapioca de Presunto e Queijo">
+                            <label for="tapiocapresunto">Tapioca de Presunto e Queijo</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocapresuntoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tapiocamista" class="opcoes" value="Tapioca Mista">
+                            <label for="tapiocamista">Tapioca Mista</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tapiocamistaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset> 
+
+            <fieldset id="sopas">
+                <table>
+                    <h3>Sopas:</h3>
+
+                    <tr>
+                        <td>Opções:</td>
+                        <td>Quantidade:</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sopacarne" class="opcoes" value="Sopa de Carne">
+                            <label for="sopacarne">Sopa de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sopacarneqtd" min="0" value="0">
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="caldomacaxeira" class="opcoes" value="Caldo de Macaxeira">
+                            <label for="caldomacaxeira">Caldo de Macaxeira</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="caldomacaxeiraqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+
+            <fieldset id="cuscuz">
+                <table>
+                    <h3>Cuscuz:</h3>
+
+                    <tr>
+                        <td>Opções:</td>
+                        <td>Quantidade:</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cuscuzguisadocarne" class="opcoes" value="Cuscuz com Guisado de Carne">
+                            <label for="cuscuzguisadocarne">Cuscuz com Guisado de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cuscuzguisadocarneqtd" min="0" value="0">
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cuscuzfrango" class="opcoes" value="Cuscuz com Guisado de Frango">
+                            <label for="cuscuzfrango">Cuscuz com Guisado de Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cuscuzfrangoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cuscuzcarnedesol" class="opcoes" value="Cuscuz com Carne de Sol">
+                            <label for="cuscuzcarnedesol">Cuscuz com Carne de Sol</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cuscuscarnedesolqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cuscuztemperado" class="opcoes" value="Cuscuz Temperado">
+                            <label for="cuscuztemperado">Cuscuz Temperado</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cuscuztemperadoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cuscuzcalabresa" class="opcoes" value="Cuscuz com Calabresa">
+                            <label for="cuscuzcalabresa">Cuscuz com Calabresa</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cuscuzcalabresaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset id="macaxeira">
+                <table>
+                    <h3>Macaxeira:</h3>
+
+                    <tr>
+                        <td>Opções:</td>
+                        <td>Quantidade:</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macaxeiraguisadocarne" class="opcoes" value="Macaxeira com Guisado de Carne">
+                            <label for="macaxeiraguisadocarne">Macaxeira com Guisado de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macaxeiraguisadocarneqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macaxeirafrango" class="opcoes" value="Macaxeira com Guisado de Frango">
+                            <label for="macaxeirafrango">Macaxeira com Guisado de Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macaxeirafrangoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macaxeiracarnedesol" class="opcoes" value="Macaxeira com Carne de Sol">
+                            <label for="macaxeiracarnedesol">Macaxeira com Carne de Sol</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macaxeiracarnedesolqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macaxeiracalabresa" class="opcoes" value="Macaxeira com Calabresa">
+                            <label for="macaxeiracalabresa">Macaxeira com Calabresa</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macaxeiracalabresaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macaxeiracamarao" class="opcoes" value="Macaxeira com Camarão">
+                            <label for="macaxeiracamarao">Macaxeira com Camarão</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macaxeiracamaraoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset id="tortas">
+                <table>
+                    <h3>Tortas</h3>
+                    <tr>
+                        <td>Opções:</td>
+                        <td>Quantidade:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tortafrango" class="opcoes" value="Torta de Frango">
+                            <label for="tortafrango">Torta de Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tortafrangoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tortacarnesol" class="opcoes" value="Torta de Carne de Sol">
+                            <label for="tortacarnesol">Torta de Carne de Sol</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tortacarnesolqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tortacamarao" class="opcoes" value="Torta de Camarão">
+                            <label for="tortacamarao">Torta de Camarão</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tortacamaraoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tortaatum" class="opcoes" value="Torta de Atum">
+                            <label for="tortaatum">Torta de Atum</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tortaatumqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="tortalegumes" class="opcoes" value="Torta de Legumes">
+                            <label for="tortalegumes">Torta de Legumes</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="tortalegumesqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset id="massas">
+                <table>
+                    <h3>Massas:</h3>
+
+                    <tr>
+                        <td>Opções:</td>
+                        <td>Quantidade:</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macarraobolonhesa" class="opcoes" value="Macarrão à Bolonhesa">
+                            <label for="macarraobolonhesa">Macarrão à Bolonhesa</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macarraobolonhesaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="lasanhafrango" class="opcoes" value="Lasanha de Frango">
+                            <label for="lasanhafrango">Lasanha de Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="lasanhafrangoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="lasanhacarne" class="opcoes" value="Lasanha de Carne">
+                            <label for="lasanhacarne">Lasanha de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="lasanhacarneqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="lasanhacamarao" class="opcoes" value="Lasanha de Camarão">
+                            <label for="lasanhacamarao">Lasanha de Camarão</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="lasanhacamaraoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="arrozleitepacoca" class="opcoes" value="Arroz de Leite com Paçoca">
+                            <label for="arrozleitepacoca">Arroz de Leite com Paçoca</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="arrozleitepacocaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="escondidinhocamarao" class="opcoes" value="Escondidinho de Camarão">
+                            <label for="escondidinhocamarao">Escondidinho de Camarão</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="escondidinhoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="escondidinhocarne" class="opcoes" value="Escondidinho de Carne">
+                            <label for="escondidinhocarne">Escondidinho de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="escondidinhocarneqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <td>
+                        <input type="checkbox" name="batatafrango" class="opcoes" value="Batata Doce com Frango">
+                        <label for="batatafrango">Batata Doce com Frango</label><br>
+                    </td>
+                    <td>
+                        <input type="number" name="batatafrangoqtd" min="0" value="0">
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="batataguisadocarne" class="opcoes" value="Batata Doce com Guisado de Carne">
+                        <label for="batataguisadocarne">Batata Doce com Guisado de Carne</label><br>
+                    </td>
+                    <td>
+                        <input type="number" name="batataguisadocarneqtd" min="0" value="0">
+                    </td>
+                </table>           
+            </fieldset>
+
+            <fieldset id="bebidas">
+                <table>
+                    <h3>Bebidas:</h3>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucoabacaxihortela" class="opcoes" value="Suco de Abacaxi com Hortelã">
+                            <label for="sucoabacaxihortela">Suco de Abacaxi com Hortelã</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucoabacaxihortelaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucoabacaxi" class="opcoes" value="Suco de Abacaxi">
+                            <label for="sucoabacaxi">Suco de Abacaxi</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucoabacaxiqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucogoiaba" class="opcoes" value="Suco de Goiaba">
+                            <label for="sucogoiaba">Suco de Goiaba</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucogoiabaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucocaja" class="opcoes" value="Suco de Cajá">
+                            <label for="sucocaja">Suco de Cajá</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucocajaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucomaracuja" class="opcoes" value="Suco de Maracujá">
+                            <label for="sucomaracuja">Suco de Maracujá</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucomaracujaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucoacerola" class="opcoes" value="Suco de Acerola">
+                            <label for="sucoacerola">Suco de Acerola</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucoacerolaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sucolimao" class="opcoes" value="Suco de Limão">
+                            <label for="sucolimao">Suco de Limão</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="sucolimaoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cocacola1l" class="opcoes" value="Coca-Cola 1L">
+                            <label for="cocacola1l">Coca-Cola 1L</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cocacola1lqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <td>
+                        <input type="checkbox" name="cocalata" class="opcoes" value="Coca-Cola Lata">
+                        <label for="cocalata">Coca-Cola Lata</label><br>
+                    </td>
+                    <td>
+                        <input type="number" name="cocalataqtd" min="0" value="0">
+                    </td>
+                </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset id="button">
+                <input type="button" id="save" value="Finalizar">
+            </fieldset>
+        </section>
+    </form>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
