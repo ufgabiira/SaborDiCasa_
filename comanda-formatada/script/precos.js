@@ -128,44 +128,44 @@ var precos = [
         preco: 10.0
     },
     {
-        item: "Suco de Abacaxi com Hortelã",
-        preco: 3.5
-    },
-    {
         item: "Porção de Frango à Passarinho",
-        preco: 0
+        preco: 3.0
     },
     {
         item: "Porção de Linguiça Calabresa",
-        preco: 0
+        preco: 5.0
     },
     {
         item: "Porção de Guisado de Frango",
-        preco: 0
+        preco: 3.0
     },
     {
         item: "Porção de Guisado de Carne",
-        preco: 0
+        preco: 4.0
     },
     {
         item: "Porção de Carne de Sol",
-        preco: 0
+        preco: 5.0
     },
     {
         item: "Porção de Paçoca de Carne",
-        preco: 0
+        preco: 5.0
     },
     {
         item: "Porção de Cuscuz",
-        preco: 0
+        preco: 2.0
     },
     {
         item: "Porção de Macaxeira",
-        preco: 0
+        preco: 2.0
     },
     {
         item: "Porção de Batata Doce",
-        preco: 0
+        preco: 2.0
+    },
+    {
+        item: "Suco de Abacaxi com Hortelã",
+        preco: 3.5
     },
     {
         item: "Suco de Abacaxi",
