@@ -201,7 +201,7 @@
 
             <fieldset id="macaxeira">
                 <table>
-                    <h3>Macaxeira:</h3>
+                    <h3>Macaxeira e Batata:</h3>
 
                     <tr>
                         <td>Opções:</td>
@@ -255,6 +255,26 @@
                         </td>
                         <td>
                             <input type="number" name="macaxeiracamaraoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="batatafrango" class="opcoes" value="Batata Doce com Frango">
+                            <label for="batatafrango">Batata Doce com Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="batatafrangoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="batataguisadocarne" class="opcoes" value="Batata Doce com Guisado de Carne">
+                            <label for="batataguisadocarne">Batata Doce com Guisado de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="batataguisadocarneqtd" min="0" value="0">
                         </td>
                     </tr>
                 </table>
@@ -397,22 +417,6 @@
                             <input type="number" name="escondidinhocarneqtd" min="0" value="0">
                         </td>
                     </tr>
-
-                    <td>
-                        <input type="checkbox" name="batatafrango" class="opcoes" value="Batata Doce com Frango">
-                        <label for="batatafrango">Batata Doce com Frango</label><br>
-                    </td>
-                    <td>
-                        <input type="number" name="batatafrangoqtd" min="0" value="0">
-                    </td>
-
-                    <td>
-                        <input type="checkbox" name="batataguisadocarne" class="opcoes" value="Batata Doce com Guisado de Carne">
-                        <label for="batataguisadocarne">Batata Doce com Guisado de Carne</label><br>
-                    </td>
-                    <td>
-                        <input type="number" name="batataguisadocarneqtd" min="0" value="0">
-                    </td>
                 </table>           
             </fieldset>
 
@@ -499,14 +503,110 @@
                         </td>
                     </tr>
 
-                    <td>
-                        <input type="checkbox" name="cocalata" class="opcoes" value="Coca-Cola Lata">
-                        <label for="cocalata">Coca-Cola Lata</label><br>
-                    </td>
-                    <td>
-                        <input type="number" name="cocalataqtd" min="0" value="0">
-                    </td>
-                </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cocalata" class="opcoes" value="Coca-Cola Lata">
+                            <label for="cocalata">Coca-Cola Lata</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cocalataqtd" min="0" value="0">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset id="porcoes">
+                <table>
+                    <h3>Porções Extras:</h3>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="frangopassarinho" class="opcoes" value="Porção de Frango à Passarinho">
+                            <label for="frangopassarinho">Porção de Frango à Passarinho</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="frangopassarinhoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="calabresa" class="opcoes" value="Porção de Linguiça Calabresa">
+                            <label for="calabresa">Porção de Linguiça Calabresa</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="calabresaqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="guisadofrango" class="opcoes" value="Porção de Guisado de Frango">
+                            <label for="guisadofrango">Porção de Guisado de Frango</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="guisadofrangoqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="guisadocarne" class="opcoes" value="Porção de Guisado de Carne">
+                            <label for="guisadocarne">Porção de Guisado de Carne</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="guisadocarneqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="carnedesol" class="opcoes" value="Porção de Carne de Sol">
+                            <label for="carnedesol">Porção de Carne de Sol</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="carnedesolqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pacocacarne" class="opcoes" value="Porção de Frango à Passarinho">
+                            <label for="pacocacarne">Porção de Frango à Passarinho</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="pacocacarneqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cuscuz" class="opcoes" value="Porção de Cuscuz">
+                            <label for="cuscuz">Porção de Cuscuz</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="cuscuzqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="macaxeira" class="opcoes" value="Porção de Macaxeira">
+                            <label for="macaxeira">Porção de Macaxeira</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="macaxeiraqtd" min="0" value="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="batatadoce" class="opcoes" value="Porção de Batata Doce">
+                            <label for="batatadoce">Porção de Batata Doce</label><br>
+                        </td>
+                        <td>
+                            <input type="number" name="batatadoceqtd" min="0" value="0">
+                        </td>
+                    </tr>
                 </table>
             </fieldset>
             

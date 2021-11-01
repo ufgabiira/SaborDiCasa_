@@ -14,7 +14,8 @@ let contador = localStorage.getItem('count');
 
 for(let i = 0; i < contador; i++) {
     let linha = criaLinha(tabela);
-    let arrItens = localStorage.getItem('item' + i).split(', ');
+    let arrItens = localStorage.getItem('item' + i).split(', '); // Transformar em um objeto de arrays
+    // console.log(arrItens)
     
     for(let j  = 0; j < 3; j++) {
         let celula = linha.insertCell();
